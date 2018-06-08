@@ -1,12 +1,9 @@
 
-# blockchain.wasistdas.org
+# blockchain
 
-> Sources of http://blockchain.wasistdas.org
+> Sources of blockchain.wasistdas.org
 
-- github - https://github.com/jwausle/wasistdas.org/tree/master/blockchain 
-- docker - https://hub.docker.com/r/jwausle/blockchain.wasistdas.org 
-
-## Vue build Setup 
+## Build Setup
 
 ``` bash
 # install dependencies
@@ -27,24 +24,11 @@ npm run unit
 # run all tests
 npm test
 ```
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Deploy automatic
+## Deploy
 
-```
-# local build
-$ npm run build
-$ docker build -t jwausle/blockchain.wasistdas.org .
-$ docker push jwausle/blockchain.wasistdas.org 
-
-# login into AWS
-$ ssh -v -i ~/.aws/jwausle.pem ubuntu@ec2-35-158-178-132.eu-central-1.compute.amazonaws.com 
-$$ docker stop blockchain.wasistdas.org
-$$ docker pull jwausle/blockchain.wasistdas.org 
-$$ docker run --rm --net web --ip6 2a05:d014:fc2:3500:4000::2 --name blockchain.wasistdas.org -d jwausle/blockchain.wasistdas.org
-```
-
-## Deploy manual
 
 ```
 scp -r -i ~/.aws/jwausle.pem dist ubuntu@ec2-35-158-178-132.eu-central-1.compute.amazonaws.com:/tmp/dist
@@ -55,8 +39,6 @@ sudo -u
 docker run --rm --name wasistdas.org -d -p 80:80 -v /home/ubuntu/wasistdas.org/:/usr/share/nginx/html:ro nginx
 
 ```
-
-## Useful hints and links
 
 https://docs.aws.amazon.com/de_de/AmazonVPC/latest/UserGuide/get-started-ipv6.html
 
