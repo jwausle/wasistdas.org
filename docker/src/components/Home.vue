@@ -15,7 +15,7 @@
           <v-flex xs12 sm6 offset-sm3>
             <v-card>
               <v-card-media
-                src="/static/blockchain.jpg"
+                src="/static/docker-banner.png"
                 height="300px"
               >
               </v-card-media>

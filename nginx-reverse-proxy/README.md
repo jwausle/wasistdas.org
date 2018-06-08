@@ -28,6 +28,8 @@ nginx start
 
 ## Enable https
 
+For TLS termination I use the service of https://letsencrypt.org/. The reverse proxy terminate the ssl handshake with generated certificates from [certbot](https://certbot.eff.org/lets-encrypt/ubuntuxenial-nginx) client. 
+
 ```
 # Followed instructioins from here
 ## Install certbot

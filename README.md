@@ -5,12 +5,14 @@ The domains [*.wasistdas.org](http://wasistdas.org) is a summary of my (jwausle)
 ## Subdomains
 
 - [blockchain.wasistdas.org](http://blockchain.wasistdas.org) (under construction)
+- [docker.wasistdas.org](http://bitcoin.wasistdas.org) (in construction)
 - [bitcoin.wasistdas.org](http://bitcoin.wasistdas.org) (in planing)
 - [ethereum.wasistdas.org](http://ethereum.wasistdas.org) (in planing)
+- [iota.wasistdas.org](http://iota.wasistdas.org) (in planing)
 
 - [jwausle.wasistdas.org](http://jwausle.wasistdas.org) (its me in planning)
 
-## Todo on host 
+## Todo on host
 
 - install `docker`
 - install `nginx`
