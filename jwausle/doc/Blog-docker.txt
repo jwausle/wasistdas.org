@@ -1,0 +1,39 @@
+Docker fummeln oder lieber bummeln.
+Lieber mit Docker fummeln als ohne bummeln.
+Docker Fluch oder Docker Segen.
+Docker sein oder nicht sein ...
+Ein gespenst geht um, namens Docker.
+Was nicht jeder weiß, Meister Docker macht nicht alles strahlend weiss.
+Aus großer Docker-Kraft, folgt große Verantwortung.
+
+# Lieber mit Docker fummeln als ohne bummeln.
+
+Seit einiger Zeit geht ein Gespest um im IT Bereich. Docker, der populärste Container dienst würfelt einiges Durcheinander. Es geht nicht nur um Rechner-Virtualisierung, sondern Netzwerk-Virtualisierung. Unter dem Namen DevOps verkleinert sich das Gap zwischen Enticklung und Betrieb. Die Bereiststellungskosten eines neuen (virtuellen) Rechners sinken. Die eines virtuellen Netzwerkes um ein vielfaches. Die Schnittstelle zwischen: was eine Netzwerkdienst ist, wie er konfiguriert, gestartet, gekoppelt wird, wo er im Netzwerk läuft und wo er "bare-metal" läuft verschieben sich dramatisch. Es entstehen neue Räume für neue Produkte, wie Amazon-Web-Service, Kubernetes, Ranger, Openshift, AppAgile und damit neue Chancen und Risiken.
+
+# Aber was heisst das eigentlich?
+- Die Entwickler machen auf einmal Betrieb?
+- Der Betrieb entwickelt auf einmal?
+Nein, sicher nicht . Es ist eher eine Annäherung. Ein Entwickler wird sensibilisiert für den Betrieb und umgekehrt. D.h. Er befasst sich mit Themen wie Informationsgehalt von Logging, Metriken, ..., Allarming, Konfigurationsfähigkeit über Prozess-, Protokoll- und Netzwerk-Grenzen hinweg. Und der Betrieb genauso. Er bekommt einen Einblick in die Komplexität der Konfiguration, Kopplung von und zwischen Komponenten und Services über Prozess- und Hardwaregrenzen hinaus.
+
+Tools wie Ansible, Kubernetes, Range, Openshift entstehen und entwicklen eine Form. Es wird überall ge-jsoned und ge-yamled.
+Der Netzwerkdienst rückt in den Fokus der Aufmerksamkeit. Buzz-words wie REST, Reaktive, Cloudready, Container-Orchestierung sind in aller Munde und machen in jedem Meeting die Runde.
+
+Wir sind bereit: "Die neue Docker-Sau kann durchs Dorf getrieben werden."
+
+Aber wo? In der Entwicklung? Im Betrieb? In Beiden? Fragen über Fragen .. auf die es viele antworten und holprige Wege, diese zu finden gibt.
+
+# Was verpricht denn diese schöne neue Dockerwelt?
+- Skaliebarkeit (Mehr last heisst mehr Container starten)
+- Hochverfübarkeit (24/7=)
+- Robustness des Dienstes
+- Sicherheit
+
+# Und was kostet sie eigentlich?
+- Neue Tools, neue Probleme
+- Neue Paradigmen, brauchen neue Lösungen für bekannte Probleme (Netzwerk caches, Kopplung, Konfiguration, Security)
+- Vertrauen auf die Containertechnologie
+- Motivierte Mitarbeiter, die Bock haben in die neuen Welt einzutauchen (auf allen Seiten, Entwicklung und Betrieb)
+
+Soweit so gut. Wer jetzt noch liesst, hat Bock auf ein Beispiel.
+
+...

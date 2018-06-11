@@ -1,12 +1,10 @@
 <template>
 <v-app>
   <v-toolbar>
-    <v-toolbar-title>Docker</v-toolbar-title>
+    <v-toolbar-title>BITCOIN</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-btn flat v-on:click="$router.push('/WasIstDas')">Was ist das</v-btn>
-      <v-btn flat v-on:click="$router.push('/Technologie')">Technologie</v-btn>
-      <v-btn flat v-on:click="$router.push('/Vision')">Tools</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
@@ -15,7 +13,7 @@
           <v-flex xs12 sm6 offset-sm3>
             <v-card>
               <v-card-media
-                src="/static/docker-banner.png"
+                src="/static/bitcoin-banner.jpg"
                 height="300px"
               >
               </v-card-media>

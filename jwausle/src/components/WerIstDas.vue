@@ -69,7 +69,7 @@
 </template>
 <script>
 export default {
-  name: 'WasIstDas',
+  name: 'WerIstDas',
   data () {
     return {
       show: false

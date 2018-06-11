@@ -1,0 +1,36 @@
+Docker - Was ist das
+  - Virtualisierung von Netzwerken
+
+- lego für die cloud
+
+Docker virtualisert Netzwerke. Es liefert die Idee, die Werkzeuge, das Format und Infrastruktur, um Netzwerke zu virtualiseren. Dabei liegt der Fokus des Hauptnutzers nicht auf dem alt eingesessenene Netzwerkadmin. Sondern auf dem Entwickler, der Ende zu Ende Verantwortung übernehmen möchte.
+
+Die drei Säulen, die die Docker tragen sind dabei
+1) Das Dockerfile, um Docker Images zu bauen
+2) Der Daemon, um Docker Images zu starten
+3) Die Registry, um Docker Images zu verteilen
+
+Die 3 Säulen werden [hier](/Technologien) näher beleuchtet.
+
+# Vor Docker?
+
+Bevor es Docker gab, gab es selbstverständlich auch schon Virtualierungstechnologien (vmware, virtualbox). Deren Fokus lag allerdings auf dem auttomatisierten Erstellen von Rechnerinstanzen. Das Ergebnis war in aller Regel ein große Blackbox, wo nicht rihtig klar war was wirklich drin steckt. Das ist so ähnlich, wie der alte Desktoprechner, der unter dem Arbeitsplatz stand. Das was installiert ist, weiss nur der der es installiert hat. Und der den GGrund inzwischen vergessen.
+Es war relativ anstrengend eine neuen virtualiserten Rechner zu erstellen. Und somit, wurde eine bestehender Rechner immer weiter genutzt und dessen Anwendungsbreich verbreittertet sich. Mit dem Preis, das unklar ist welche Software, warum installiert wurde.
+
+# Mit Docker?
+
+Docker bringt transparenz in die Rechnererstellung. Mit dem Dockerfile wird eine einfache Sprache bereitgestellt, die zum bauen von Rechner von Rechner instanzen genügend Flexibilität gibt, um Software initial auf einen Rechner zu installieren.
+Das fundamental Neue, bei Docker ist die Schichten-Architektur. Virtualisierte Rechnerinstanzen werden nicht kopiert, sondern Schicht für Schicht auf einandergestapelt. So ähnlich wie bei Lego. Das spart Platz und Installationszeit. Denn der Installlationsaufwand, für die darunter liegende Schicht kann von jemand anderem erledigt werden. Bei herkömlichen Virtualisierungstechnologien musste die Installation so oft wiederholt werden wie es Rechner gab. Genau wie in der physischen Welt.
+
+# Wo ist jetzt das virtuelle Netzwerk?
+
+Um ein physischhes IP Netzwerk zu erstellen und betreiben brauche ich der echten Welt Router, Switches, Kabel und Rechner die über eine privaten IP Adress Raum adressiert werden können. Das ist aufwenddig und teuer. Mit herkömlichen virtualiserten Rechnern war das ähnlich. Das Kabel viel weg und dii Router und Swtiches wurden i.d.R. auf einem der Rechner betrieben. Ein laufendes Netz zu betreiben war immer noch aufwendig und teuer.
+Hier spiel Docker seine echte Stärke aus. Die Idee von Docker ist, virtuelle Netzwerke auf einzelenen Rechner bwz. in anderen Netzwerken zu erstelen und u betreiben.
+
+# Was heisst das jetzt?
+
+Wenn ich ein Docker-Image starte, dann wird der Docker Container in einem virtuellen 172.17.0.0/16 Netzwerk auf meinem Rechner gestartet. Der Rechner erhält z.B. die IP=172.17.0.2. Wenn ich ein zweites Docker Image starte bekommt dieses die IP=172.17.0.3. Beide Rechner können mit einander sprechen. Sie befinden sich im selben IP-Netz. Das wird mit docker schon mitgeliefert.
+Änhlich einfach ist es virtuelle Netzwerke mit einem beliebigem IP-Adresseruam zu erstellen und Container in diesem Netzwerk zu betreiben. Entwickler, im Zeitalter der Cloud, versetzt es in die Lage  komplexe produktiv ähnliche Netzwerke zu Test- und Entwicklungszwecken zu betreiben. Aber auch für Hosting dienste wie Amazon AWS, Microsoft Azure und Google-Cloud bringt docker ausreichend Potential mit, um vollständige Cloudlösungen zu hosten.
+
+# Potentiale 
+ 

@@ -1,12 +1,13 @@
 <template>
 <v-app>
   <v-toolbar>
-    <v-toolbar-title>Docker</v-toolbar-title>
+    <v-toolbar-title>JWAUSLE</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat v-on:click="$router.push('/WasIstDas')">Was ist das</v-btn>
-      <v-btn flat v-on:click="$router.push('/Technologie')">Technologie</v-btn>
-      <v-btn flat v-on:click="$router.push('/Vision')">Tools</v-btn>
+      <v-btn flat v-on:click="$router.push('/WerIstDat')">Wer ist das</v-btn>
+      <v-btn flat v-on:click="$router.push('/FullstackDeveloper')">Full Stack Develop</v-btn>
+      <v-btn flat v-on:click="$router.push('/Enthusiast')">Enthusiast</v-btn>
+      <v-btn flat v-on:click="$router.push('/Enthusiast')">Vater</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
