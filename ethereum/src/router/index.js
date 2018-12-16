@@ -13,7 +13,7 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: '/WasIstDas',
+          path: '/was_ist_das',
           name: 'WasIstDas',
           component: WasIstDas
         }

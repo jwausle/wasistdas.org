@@ -15,17 +15,17 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: '/WasIstDas',
+          path: '/blockchain-analogie-stille-post',
           name: 'WasIstDas',
           component: WasIstDas
         },
         {
-          path: '/Vision',
+          path: '/blockchain-vision',
           name: 'Vision',
           component: Vision
         },
         {
-          path: '/Technologie',
+          path: '/blockchain-technologie',
           name: 'Technologie',
           component: Technologie
         }

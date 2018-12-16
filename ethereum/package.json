@@ -10,11 +10,14 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
+    "clean": "rm -rf dist && docker stop ethereum.wasistdas.org ",
     "build": "node build/build.js",
-    "postbuild": "sh build/sitemap.sh"
+    "postbuild": "sh build/sitemap.sh",
+    "deploy": "npm run build && docker build -t jwausle/ethereum.wasistdas.org ."
   },
   "dependencies": {
     "npm": "^6.1.0",
+    "prerender-spa-plugin": "^3.2.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.0.18"

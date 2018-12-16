@@ -10,6 +10,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const PuppeteerRenderer = PrerenderSpaPlugin.PuppeteerRenderer
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -119,7 +121,16 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new PrerenderSpaPlugin({
+      staticDir: path.join(__dirname, '../dist'), // The path to the folder where index.html is.
+      routes: [ '/', '/was_ist_das' ], // List of routes to prerender.
+      renderer: new PuppeteerRenderer({
+        // Wait to render until the element specified is detected with document.querySelector.
+        renderAfterElementExists: '#app',
+        headless: false
+      })
+    })
   ]
 })
 

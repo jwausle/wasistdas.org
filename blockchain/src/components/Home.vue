@@ -4,9 +4,9 @@
     <v-toolbar-title>Blockchain</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat v-on:click="$router.push('/WasIstDas')">Was ist das</v-btn>
-      <v-btn flat v-on:click="$router.push('/Vision')">Vision</v-btn>
-      <v-btn flat v-on:click="$router.push('/Technologie')">Technologie</v-btn>
+      <v-btn flat v-on:click="$router.push('/blockchain-analogie-stille-post')">Was ist das</v-btn>
+      <v-btn flat v-on:click="$router.push('/blockchain-vision')">Vision</v-btn>
+      <v-btn flat v-on:click="$router.push('/blockchain-technologie')">Technologie</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
@@ -41,7 +41,7 @@ export default {
       msg: 'Welcome to Your Vue.js Home'
     }
   },
-  beforeMount () { this.$router.push('/WasIstDas') }
+  beforeMount () { this.$router.push('/blockchain-analogie-stille-post') }
 }
 </script>
 

@@ -2,67 +2,80 @@
     <v-card>
       <v-card-title primary-title>
         <div>
-          <div class="headline">Docker - Was ist das?</div>
-          <span class="grey--text">Virtualierung von Netzwerken</span>
+          <div class="headline text-sm-left">Docker - Was ist das?</div>
+          <span class="grey--text">Netzwerkvirtualisierung genial einfach - einfach genial</span>
         </div>
       </v-card-title>
       <v-card-text>
         <p class="text-sm-left">
-          Docker virtualisiert Netzwerke so einfach - Sowohl das Erstellen (Build), das Betreiben (Run) und das Verteilen (Ship)
-          ist einfach und leichtgewichtig im Gegensatz zu herkömmlichen Virtualisierungstechnologien (Vmware, VirtualBox).
+          Docker virtualisiert Netzwerke so einfach, ohne Router und Routen konfiguration beherrschen zu müssen
+          - Sowohl das Erstellen (Build), das Betreiben (Run) und das Verteilen (Ship) ist einfach und
+          platzsparend im Gegensatz zu herkömmlichen Virtualisierungstechnologien (<a href="https://www.vmware.com/">Vmware</a>, <a href="https://www.virtualbox.org/">VirtualBox</a>).
+          Somit wird Jeder zum Netzwerkadministrator ohne es zu merken.
         </p>
-        <!-- Hä? -->
-        <h2 class="text-sm-left">Hä - Stille Post?</h2>
-        <p class="text-sm-left">Ja genau, Stille-Post das Spiel aus Kindertagen, wo eine Nachricht von Ohr
-             zu Ohr geflüstert wird und am Ende ein überraschendes Ergebnis steht.
-        </p>
-        <img src="static/stillepost.png" height="150" width="300"/>
-        <!-- Wie das? -->
-        <h2 class="text-sm-left">Wie das?</h2>
+        <img src="static/docker-architectur2.png" height="190" width="300"/>
+        <h2 class="text-sm-left">Docker Idee - Schichten anstatt Monoliten</h2>
         <p class="text-sm-left">
-          Ersetze die geheime Nachricht durch einen 'Zettel'. Das Flüstern indem 'der Zettel auf dem Tisch' gelegt wird.
-          Das von 'Ohr zu Ohr' durch eine gemeinsame Abstimmung, darüber ob die Nachricht korrekt ist.
+          Die Docker Idee - genial einfach, schnelle und platzsparende Netwerkvirtualisierung durch aufeinanderschichten von Images. 
         </p>
-        <p class="text-sm-left">Das abgestimmte Ergebnis (ausschließlich das abgestimmte Ergebnis) reihen wir Zettel für Zettel auf,
-            wie an einer Schnurr. Die entstehende Zettelschnur ist die Blocklchain. Ich verspreche - es wird am Ende keine Überraschung geben.
-            Das ist zwar langweilig aber zu 100% transparent. Genau das was wir im Internet wollen.
-        </p>
-        <blockquote>Hurra Stille-Post ist eine Blockchain.</blockquote>
-        <!-- Ein bisschen Konkreter? -->
-        <h2 class="text-sm-left">Ein bisschen Konkreter?</h2>
-        <p class="text-sm-left">Stelle dir folgendes vor:</p>
-        <li class="text-sm-left">Die Kinder - die Stille-Post spielen - nennen wir Nodes bzw. Legers</li>
-        <li class="text-sm-left">Die Zettel bezeichnen wir als Transaktionen</li>
-        <p/>
-        <p class="text-sm-left">Eine Transaktion wird von einer Sender-Node erstellt,
-            um eine Nachricht an eine Empfänger-Node zu übermitteln. Die Übermittlung passiert,
-            wenn die Transaktion in der Blockchain gespeichert wird. Bevor das passiert muss die
-            Transaktion noch verifiziert werden. Das passiert indem die Transaktion öffentlich
-            bekannt gemacht wird. Alle Beteiligten Nodes können die Transaktion einsehen und
-            verifizieren. Die Kriterien sind:
-        </p>
-        <li class="text-sm-left">Jeder prüft ob der Sender und Empfänger existiert.</li>
-        <li class="text-sm-left">Jeder prüft ob der Inhalt der Nachricht korrekt ist.</li>
-        <li class="text-sm-left">Jeder versucht eine 6 zu würfeln.</li>
-        <p>
+        <ol class="text-sm-left">
+          <li>Docker build - ist wie den Rechner zusammen bauen</li>
+          <li>Docker ship - ist wie den Rechner kaufen und liefern</li>
+          <li>Docker run - ist wie den Rechner einschalten</li>
+        </ol>
+        <br>        
         <p class="text-sm-left">
-            Die erste Node, die alle 3 Kriterien erfüllt hat, unterschreibt den Zettel und benachrichtigt
-            alle anderen Nodes darüber, dass ein neuer Zettel auf die Schnur geschnürt wurde. Die
-            Transaktion gilt als übermittelt und ist für immer Bestandteil der Blockchain.
+          Das Neue gegenüber existierenden Virtualisierungstechnologien (<a href="https://www.vmware.com/">Vmware</a>, <a href="https://www.virtualbox.org/">VirtualBox</a>) ist die
+           Schichtenarchitektur. Ein virtueller Rechner wird nicht länger als eine große Einheit (Image)
+           behandelt, sondern jede Schicht einzeln (z.B. Betriebssystemschicht, Netzwerkschicht, Anwendungsschicht).
+           D.h. jede Schicht stellt lediglich ihre Dateien als <a href="/#/docker-image">Docker-Image</a> zur Verfügung.
+           Diese Images werden zur Laufzeit des virtuellen Rechners zu einem <a href="/#/docker-container">Docker-Container</a> übereinander geschichtet.
         </p>
-        <!-- Was ist jetzt so besonders?-->
-        <h2 class="text-sm-left">Was ist jetzt so besonders?</h2>
-        <p class="text-sm-left">Die übermittelte Nachricht, in der Blockchain, steht dort für immer.
-            Wie der Zettel auf der Schnur. Er kann niemals aus der Schnur entfernt werden und was darauf
-            steht, steht dort ebenfalls für immer.
-        </p>
-        <!-- Was hat das mit Geld zu tun?-->
-        <h2 class="text-sm-left">Was hat das mit Geld zu tun?</h2>
+        <img src="static/docker-idee.png" height="150" width="300"/>        
+        <br><span class="grey--text">"Schichten statt Monoliten"</span>
         <p class="text-sm-left">
-            Wenn auf dem Zettel nicht nur eine Nachricht steht, sondern auch noch ein Geldschein angeklebt ist,
-            den der Sender an den Empfänger gibt, dann ist eine Blockchain als Bezahlsystem denkbar. Der angeklebte
-            Geldschein ist nach der übermittlung im Besitz des Empfängers und kann durch diesen in Form einer neuen
-            Transaktion weiter gegeben werden.
+          Alle Schichten
+           übereinander bilden dann den virtuellen Rechner. Das hat den Vorteil das einzelne Schichten
+           (z.B. Betriebssystem) einfach in vielen virtuellen Rechnern wiederverwendet werden können, obwohl
+           sie physisch nur einmal existieren.
+        </p>
+        <img src="static/docker-lego.jpeg" height="190" width="300"/>
+        <br><span class="grey--text">"Ein bischen wie Lego"</span>
+        <p class="text-sm-left">
+          Das Neue in puncto Netzwerkvirtualsierung ist, dass jeder <a href="/#/docker-container">Docker-Container</a> konsequent in einem privaten
+          Docker-Subnetz betrieben wird. Die Routingkonfiguraion übernimmt Docker. Das mimimiert die Konfigurationsfehler
+          für den Anwender und schafft Sicherheit auf Netzwerkebene, da das Docker-Subnetz für die <a href="/#/docker-container">Docker-Container</a>
+          als Firewall agiert.
+        </p>
+        <img src="static/docker-network.gif" height="190" width="300"/>
+        <br><span class="grey--text">"Jeder ist Netzwerkadmin ohne es zu merken"</span>
+        <h2 class="text-sm-left">1. Docker - Build</h2>
+        <span class="grey--text">"Docker - Build ist wie einen neuen Rechner zusammen bauen"</span>
+        <p class="text-sm-left">
+          Docker build ist das Erstellen von virtuellen Rechnern. Die Basis ist das <a href="/#/docker-dockerfile">Dockerfile</a> - eine einfache Beschreibungssprache, um
+          ein <a href="/#/docker-image">Docker-Image</a> zu bauen. Der <a href="/#/docker-daemon">Docker-Daemon</a> erstellt automatisiert ein neues Image, das immer auf
+          einem bestehenden <a href="/#/docker-image">Docker-Image</a> aufbaut. Meist ist das ein Betriebssystem. Das neu erstellte Image besteht dann mindestens aus zwei Schichten
+          (z.B. der Betriebssystem-Schicht und der eigenen Anwendungsschicht). Beide Image Schichten werden einzeln in der Docker Registry gespeichert, verwalltet und
+          verteilt (Docker - Ship).
+        </p>
+        <h2 class="text-sm-left">2. Docker - Ship</h2>
+        <span class="grey--text">"Docker - Ship ist wie den neuen Rechner ins Ladenregal stellen, kaufen und liefern"</span>
+        <p class="text-sm-left">
+          Docker ship ist das Verteilen der Images an Dritte. Die Basis ist die Docker Registry - ein Webservice, um ein <a href="/#/docker-image">Docker-Image</a> unter einem
+          bestimmten Namen+Tag zum Download bereitzustellen, so das Dritte das Image nutzen können (Docker - Run) oder weitere Images darauf aufbauen
+          können (Docker - Build). <br>
+          <a href="https://hub.docker.com/">Docker Hub</a> ist die bekannteste öffentliche, kostenfrei nutzbare Docker Registry. Jeder der Docker nutzen möchte, sollte sich
+          dort einen Profil erstellen. Das erleichtert die ersten Schritte.
+        </p>
+        <h2 class="text-sm-left">3. Docker - Run</h2>
+        <span class="grey--text">"Docker - Run ist wie den neuen Rechner das erste mal einschalten"</span>
+        <p class="text-sm-left">
+          Docker run startet einen virtuellen Rechner als <a href="/#/docker-container">Docker-Container</a>. Dazu läd der <a href="/#/docker-daemon">Docker-Daemon</a> alle
+          erfoderlichen <a href="/#/docker-image">Docker-Images</a> von einer Docker-Registry herunter, schichtet diese zu einem virtuellen Rechner übereinander und startet
+          anschliessend den Rechner.<br>
+          Der virtuellen Rechner (<a href="/#/docker-container">Docker-Container</a>) bekommt eine IP Addresse im Docker-Netzwerk zu gewiesen und stellt in der Regel eine
+          Netzwerkservice an einem bestimmten Port zur Verfügung (z.b. Port=80 Webserver, Port=3306 MySQL DB). Die Services können auf unterschiedliche Weise genutzt, geroutet
+          und kombiniert werden, um komplexere Netzwerkanwedungen zu hosten.
         </p>
       </v-card-text>
     </v-card>

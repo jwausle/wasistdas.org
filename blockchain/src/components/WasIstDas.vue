@@ -3,15 +3,15 @@
       <v-card-title primary-title>
         <div>
           <div class="headline">Blockchain - Was ist das?</div>
-          <span class="grey--text">Stille Post ohne Überraschungen</span>
+          <span class="grey--text">Stille Post als Analogie</span>
         </div>
       </v-card-title>
       <v-card-text>
         <p class="text-sm-left">
-          Eine Blockchain ist wie Stille-Post, nur langweiliger und ohne Überraschungen.
+          Stille-Post ist meine Blockchain Analogie, nur langweiliger und ohne Überraschungen.
         </p>
         <!-- Hä? -->
-        <h2 class="text-sm-left">Hä - Stille Post?</h2>
+        <h2 class="text-sm-left">Hä - Stille Post - Analogie?</h2>
         <p class="text-sm-left">Ja genau, Stille-Post das Spiel aus Kindertagen, wo eine Nachricht von Ohr
              zu Ohr geflüstert wird und am Ende ein überraschendes Ergebnis steht.
         </p>
@@ -24,9 +24,9 @@
         </p>
         <p class="text-sm-left">Das abgestimmte Ergebnis (ausschließlich das abgestimmte Ergebnis) reihen wir Zettel für Zettel auf,
             wie an einer Schnurr. Die entstehende Zettelschnur ist die Blocklchain. Ich verspreche - es wird am Ende keine Überraschung geben.
-            Das ist zwar langweilig aber zu 100% transparent. Genau das was wir im Internet wollen.
+            Das ist zwar langweilig aber zu 100% transparent. Genau das was wir im Internet vermissen.
         </p>
-        <blockquote>Hurra Stille-Post ist eine Blockchain.</blockquote>
+        <blockquote>Hurra - Stille-Post ist eine Blockchain Analogie.</blockquote>
         <!-- Ein bisschen Konkreter? -->
         <h2 class="text-sm-left">Ein bisschen Konkreter?</h2>
         <p class="text-sm-left">Stelle dir folgendes vor:</p>
@@ -37,8 +37,8 @@
             um eine Nachricht an eine Empfänger-Node zu übermitteln. Die Übermittlung passiert,
             wenn die Transaktion in der Blockchain gespeichert wird. Bevor das passiert muss die
             Transaktion noch verifiziert werden. Das passiert indem die Transaktion öffentlich
-            bekannt gemacht wird. Alle Beteiligten Nodes können die Transaktion einsehen und
-            verifizieren. Die Kriterien sind:
+            bekannt gemacht wird. Alle beteiligten Nodes können die Transaktion einsehen und
+            validieren. Die Kriterien sind:
         </p>
         <li class="text-sm-left">Jeder prüft ob der Sender und Empfänger existiert.</li>
         <li class="text-sm-left">Jeder prüft ob der Inhalt der Nachricht korrekt ist.</li>

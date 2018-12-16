@@ -4,9 +4,12 @@
     <v-toolbar-title>Docker</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat v-on:click="$router.push('/WasIstDas')">Was ist das</v-btn>
-      <v-btn flat v-on:click="$router.push('/Technologie')">Technologie</v-btn>
-      <v-btn flat v-on:click="$router.push('/Vision')">Tools</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-was-ist-das')">Was ist das</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-daemon')">Daemon</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-image')">Image</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-container')">Container</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-dockerfile')">Dockerfile</v-btn>
+      <v-btn flat v-on:click="$router.push('/docker-tools')">Tools</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
@@ -41,7 +44,7 @@ export default {
       msg: 'Welcome to Your Vue.js Home'
     }
   },
-  beforeMount () { this.$router.push('/WasIstDas') }
+  beforeMount () { this.$router.push('/docker-was-ist-das') }
 }
 </script>
 

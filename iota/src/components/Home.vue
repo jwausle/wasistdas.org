@@ -4,7 +4,7 @@
     <v-toolbar-title>IOTA</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat v-on:click="$router.push('/WasIstDas')">Was ist das</v-btn>
+      <v-btn flat v-on:click="$router.push('/was_ist_das')">Was ist das</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
@@ -39,7 +39,7 @@ export default {
       msg: 'Welcome to Your Vue.js Home'
     }
   },
-  beforeMount () { this.$router.push('/WasIstDas') }
+  beforeMount () { this.$router.push('/was_ist_das') }
 }
 </script>
 

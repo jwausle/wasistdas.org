@@ -4,10 +4,10 @@
     <v-toolbar-title>JWAUSLE</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat v-on:click="$router.push('/WerIstDat')">Wer ist das</v-btn>
-      <v-btn flat v-on:click="$router.push('/FullstackDeveloper')">Full Stack Develop</v-btn>
-      <v-btn flat v-on:click="$router.push('/Enthusiast')">Enthusiast</v-btn>
-      <v-btn flat v-on:click="$router.push('/Enthusiast')">Vater</v-btn>
+      <v-btn flat v-on:click="$router.push('/wer_ist_das')">Wer ist das</v-btn>
+      <v-btn flat v-on:click="$router.push('/fullstack_developer')">Full Stack Develop</v-btn>
+      <v-btn flat v-on:click="$router.push('/enthusiast')">Enthusiast</v-btn>
+      <v-btn flat v-on:click="$router.push('/enthusiast')">Vater</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <v-content>
@@ -42,7 +42,7 @@ export default {
       msg: 'Welcome to Your Vue.js Home'
     }
   },
-  beforeMount () { this.$router.push('/WasIstDas') }
+  beforeMount () { this.$router.push('/wer_ist_das') }
 }
 </script>
 

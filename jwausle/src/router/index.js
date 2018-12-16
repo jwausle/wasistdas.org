@@ -15,17 +15,17 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: '/WerIstDas',
+          path: '/wer_ist_das',
           name: 'WerIstDas',
           component: WerIstDas
         },
         {
-          path: '/Enthusiast',
+          path: '/enthusiast',
           name: 'Enthusiast',
           component: Enthusiast
         },
         {
-          path: '/FullstackDeveloper',
+          path: '/fullstack_developer',
           name: 'FullstackDeveloper',
           component: FullstackDeveloper
         }

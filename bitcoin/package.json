@@ -11,10 +11,12 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "postbuild": "sh build/sitemap.sh"
+    "postbuild": "sh build/sitemap.sh",
+    "deploy": "npm run build && docker build -t jwausle/bitcoin.wasistdas.org ."
   },
   "dependencies": {
     "npm": "^6.1.0",
+    "prerender-spa-plugin": "^3.2.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.0.18"
