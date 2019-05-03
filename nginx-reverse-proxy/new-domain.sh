@@ -1,16 +1,28 @@
 # !/bin/bash
-IPS=./.iprc
+IPS=${HOME}/.iprc
+if ! [ -f ${IPS} ]; then
+  IPS="$(dirname $0)/.iprc"
+fi
+if ! [ -f ${IPS} ]; then
+  echo "No IPS map exist. Check '${HOME}/.iprc' and '$(dirname $0)/.iprc' why?"
+  exit 1
+fi
+
+if ! [ "$(id -u)" = "0" ]; then
+  echo "Script must run as root."
+  exit 2
+fi
 
 DOMAIN=$1
 if [ "${DOMAIN}" = "" ] ; then
-  echo "First argument must be a DOMAIN"
-  exit 1
+  echo "First argument must be a DOMAIN. Check 'cat ${IPS}' for valid domains."
+  exit 3
 fi
 
 DOMAIN_IP=$(grep ${DOMAIN} ${IPS} | cut -d' ' -f2)
 if [ "${DOMAIN_IP}" = "" ] ; then
   echo "Could not found ${DOMAIN} in ${IPS}."
-  exit 2
+  exit 4
 fi
 
 if [ "$(docker ps | grep ${DOMAIN})" = "" ]; then
